@@ -45,8 +45,7 @@ tailscale can forward traffic to `relay-host` where VPN and DNS can be routed an
 1. Register and install tailscale on `relay-host`: [link](https://tailscale.com/download/)
 2. Run `tailscale login` and use the link to authenticate
 3. Run Tailscale: `sudo tailscale up --hostname=relay-host --advertise-routes=<vpn-subnet1>,<vpn-subnet2>,..`
-
-Subnets in the command above are found in routes, after connecting to VPN on `relay-host`, by simply running `route -n | grep tun0 | grep -v "0.0.0.0"`.
+    - Subnets in the command above are found in routes, after connecting to VPN on `relay-host`, by simply running `route -n | grep tun0 | grep -v "0.0.0.0"`.
 4. Get DNS ip address. Skip till step `7` if VPN services are resolvable on public DNS servers.
     - To get DNS server address run `resolvectl status -i tun0` and look for addresses blonging to `tun0` interface.
     - In case `systemd-resolved` is not used look in `/etc/resolv.conf` and get the DNS ip address.
