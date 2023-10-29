@@ -8,17 +8,7 @@ if [[ $(uname -s) == "Darwin" ]];then
 fi
 
 tunnel_up(){
-  if [[ ! -f relay-host-sshuttle.pid ]];then
-    sshuttle -D --pidfile relay-host-sshuttle.pid -r relay-host --dns 0/0
-  fi
+  sshuttle -r relay-host --dns 0/0
 }
-
-tunnel_down(){
-  if [[ -f relay-host-sshuttle.pid ]];then
-    kill $(cat relay-host-sshuttle.pid)
-  fi
-}
-
-trap tunnel_down INT KILL TERM 
 
 tunnel_up
