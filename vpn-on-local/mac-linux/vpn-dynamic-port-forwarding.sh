@@ -22,4 +22,4 @@ trap tunnel_down INT KILL TERM
 tunnel_up
 
 [[ $? -eq 0 ]] && true
-  openvpn --config $SCRIPT_PATH/client.ovpn --socks-proxy 127.0.1 8080
+  openvpn --config $SCRIPT_PATH/../../client.ovpn --socks-proxy 127.0.1 8080
