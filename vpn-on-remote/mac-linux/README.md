@@ -1,4 +1,4 @@
-This setup requires configured and running openvpn client on ssh server preferably in the same region as the VPN server.
+This setup requires configured and running vpn client on ssh server preferably in the same region as the VPN server.
 ---
 
 # Linux

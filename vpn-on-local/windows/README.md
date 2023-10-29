@@ -8,9 +8,10 @@ This setup requires an ssh server preferably in the same region as the VPN serve
     - Hostname: `<user>@<relay-hostname-or-ip>`
     - Sidemenu -> SSH -> Auth: Add .ppk file in `Private key file for authentication`
     - Sidemenu -> SSH -> Tunnels:
+        - Select `Local`
         - Add Source port: `127.0.0.1:8080`
         - Add Destination port: `<vpn-server-ip>:port` You will find this in vpn configuration file
-    - Sidemenu -> Session: Give the sessiona name and click on `Save`
+    - Sidemenu -> Session: Give the session a name and click on `Save`
 4. Click on `Open` or `Start`
 
 ## OpenVpn
