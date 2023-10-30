@@ -8,7 +8,7 @@ Some countries block VPN for whatever reason, and this is a collection of method
 
 You can test if one of the methods work using one of the free tier cloud instances avaialble. (*preferrably Linux*)
 
-On your local linux or mac, add in `/etc/ssh/ssh_config.d/relay-host`:
+On your local linux or mac, add in `/etc/ssh/ssh_config.d/relay-host.conf`:
 ```
 Host relay-host
     HostName <relay-host-ip-or-hostname>
