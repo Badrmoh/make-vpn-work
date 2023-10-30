@@ -1,6 +1,7 @@
 #!/bin/bash
 
 SCRIPT_PATH=$(realpath $(dirname $0))
+REALY_HOST_IP=$(ssh -G relay-host | awk '$1 == "hostname" { print $2 }')
 cd $SCRIPT_PATH
 
 if [[ $(uname -s) == "Darwin" ]];then
@@ -8,7 +9,7 @@ if [[ $(uname -s) == "Darwin" ]];then
 fi
 
 tunnel_up(){
-  sshuttle -r relay-host --dns 0/0
+  sshuttle -r relay-host -x $REALY_HOST_IP --dns 0/0
 }
 
 tunnel_up
