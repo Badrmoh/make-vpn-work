@@ -21,5 +21,5 @@ trap tunnel_down INT KILL TERM
 
 tunnel_up
 
-[[ $? -eq 0 ]] && true
+[[ $? -eq 0 ]] && \
   openvpn --config $SCRIPT_PATH/../../client.ovpn --remote 127.0.0.1 8080 
