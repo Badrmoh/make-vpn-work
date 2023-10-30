@@ -32,7 +32,7 @@ Install sshuttle (if used) : `brew install sshuttle`
 ## Apple Shortcut
 
 Select the script to run after starting the shortcut.
-Download Apple Shortcut: [vpn-over-ssh](https://www.icloud.com/shortcuts/3a1d84d011614a1cb9fdaf33dc6404f1)
+Download Apple Shortcut: [vpn-over-ssh](https://www.icloud.com/shortcuts/3ab966ad5c8d48d3a29c91e9a9f80710)
 
 # Smartphones support
 
