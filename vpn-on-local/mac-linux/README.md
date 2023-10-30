@@ -10,7 +10,7 @@ Install openvpn in any case : `sudo apt install openvpn`
 
 In case of using ssh port forwarding relevant scripts can be directly called.
 
-## shuttle
+## sshuttle
 
 1. Install sshuttle (if used) : `sudo aot install sshuttle`
 2. Add VPN_SERVER_IP environment variable either in `.bashrc` or set it directly in `vpn-over-sshuttle.sh`
