@@ -1,5 +1,8 @@
 This setup requires an ssh server preferably in the same region as the VPN server
-
+# .ovpn file
+The scripts in this repository expect that a file named `client.ovpn` to exist in the root of this repository. 
+Copy your `.ovpn` to the root of this repository before using any of the scripts.
+ 
 # Linux
 
 Install openvpn : `sudo apt install openvpn`
