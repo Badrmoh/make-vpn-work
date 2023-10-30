@@ -7,8 +7,6 @@ Install sshuttle (if used) : `sudo aot install sshuttle`
 
 # MacOS
 
-Install sshuttle (if used) : `brew install sshuttle`
-
 We need to use openvpn cli instead of any OpenVPN Client, in order to make it easier to use scripts.
 
 1. `brew install openvpn`
@@ -24,9 +22,14 @@ up /etc/openvpn/update-resolv-conf
 down /etc/openvpn/update-resolv-conf
 ```
 
+## sshuttle
+
+Install sshuttle (if used) : `brew install sshuttle`
+
 ## Apple Shortcut
 
-Link: [vpn-over-ssh](https://www.icloud.com/shortcuts/3a1d84d011614a1cb9fdaf33dc6404f1)
+Select the script to run after starting the shortcut.
+Download Apple Shortcut: [vpn-over-ssh](https://www.icloud.com/shortcuts/3a1d84d011614a1cb9fdaf33dc6404f1)
 
 # Smartphones support
 
