@@ -4,9 +4,18 @@ The scripts in this repository expect that a file named `client.ovpn` to exist i
 Copy your `.ovpn` to the root of this repository before using any of the scripts.
  
 # Linux
+VPN can run over ssh tunnels or sshuttle. In case of sshuttle complete [sshuttle](#sshuttle) section as well below.
 
-Install openvpn : `sudo apt install openvpn`
-Install sshuttle (if used) : `sudo aot install sshuttle`
+Install openvpn in any case : `sudo apt install openvpn`
+
+In case of using ssh port forwarding relevant scripts can be directly called.
+
+## shuttle
+
+1. Install sshuttle (if used) : `sudo aot install sshuttle`
+2. Add VPN_SERVER_IP environment variable either in `.bashrc` or set it directly in `vpn-over-sshuttle.sh`
+3. Run using : `sudo ./vpn-over-sshuttle.sh`
+
 
 # MacOS
 
@@ -27,7 +36,9 @@ down /etc/openvpn/update-resolv-conf
 
 ## sshuttle
 
-Install sshuttle (if used) : `brew install sshuttle`
+1. Install sshuttle (if used) : `brew install sshuttle`
+2. Add VPN_SERVER_IP environment variable either in `.bashrc` or set it directly in `vpn-over-sshuttle.sh`
+3. Run VPN using Apple Shortcut provided below. (you can also directly invoke the script as it is done in case of linux OS)
 
 ## Apple Shortcut
 
